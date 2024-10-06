@@ -42,4 +42,10 @@ class EmployeeController extends Controller
         $employee->update($data);
         return redirect()->route('employee.show',$employee->id);
     }
+    public function delete($id){
+        $employee = Employee::findOrFail($id);
+        $employee->delete();
+        return redirect()->route('employee.index');
+return redirect()->route('employee.index');
+    }
 }
