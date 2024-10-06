@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name',250);
             $table->integer('age');
             $table->string('job',250);
+            $table->timestamps();
         });
     }
 
